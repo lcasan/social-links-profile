@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background: hsl(0, 0%, 8%);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    main {
+      background: hsl(0, 0%, 12%);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+    * {
+      font-family: "Inter";
+      color: hsl(0, 0%, 100%);
+    }
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+    div>h2{
+      margin-bottom: 3px;
+      font-weight: 700;
+    }
+    div>p {
+      margin-top: 3px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .content-span {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    span {
+      margin: 5px;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      background: hsl(0, 0%, 20%);
+      border-radius: 5px;
+    }
+    span:active {
+      background: hsl(75, 94%, 57%);
+      cursor: pointer;
+    }
+
+    /* Media Queries */
+    @media screen and (min-width: 375px) {
+        main {
+            width: 300px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <main>
+      <img src="assets/images/avatar-jessica.jpeg" alt="avatar">
+      <div role="Username">
+        <h2>Jessica Randall</h1>
+        <p style="font-weight: 600; color: hsl(75, 94%, 57%);">London, United Kingdom</p>
+      </div>
+      <p role="User information">"Front-end developer and avid reader."</p>
+      <div role="Social Networks" class="content-span">
+        <span>GitHub</span>
+        <span>Frontend Mentor</span>
+        <span>LinkedIn</span>
+        <span>Twitter</span>
+        <span>Instagram</span>
+      </div>
+  </main>
+
+  <footer class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Luis Miguel Casañ González</a>.
+  </footer>
+</body>
+</html>
